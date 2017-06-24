@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view2">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/searchInput"
+                android:layout_marginLeft="0dp"
+                android:hint="Input anything or ID"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/searchlistview"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/searchlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SINI</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="webservice_address">http://gege.esy.es/sini/</string>
+    <string-array name="jenis_post">
+        <item>Kehilangan</item>
+        <item>Penemuan</item>
+    </string-array>
+    <string name="form_nama">Masukkan nama anda</string>
+    <string name="tos">
+        Dalam penggunaan aplikasi ini, pengembang memiliki beberapa syarat dan ketentuan yang harus dipatuhi oleh pengguna aplikasi antara lain
+        \n\n
+        1. Aplikasi tidak bertanggung jawab terhadap akibat dari penggunaan aplikasi\n\n
+        2. Aplikasi hanya diperuntukkan bagi yang kehilangan dan menemukan barang\n\n
+        3. Imbalan penemuan barang sepenuhnya adalah kebijakan pengguna\n\n
+        4. Aplikasi tidak bertanggung jawab terhadap keselamatan pengguna\n\n
+        5. Tidak ada jaminan bahwa barang yang hilang/ditemukan kembali pada pemilik/penemu\n\n
+    </string>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar_blue"
+
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dmap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:context="com.dalbo.sini.MapsActivity"
+        android:layout_below="@+id/view" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dmap"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/det_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID -" />
+
+            <TextView
+
+                android:id="@+id/det_tglpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--/--/----" />
+
+            <TextView
+                android:id="@+id/l_barang_hilang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nama Barang"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/det_barang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/l_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Deskripsi"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/det_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/l_atasNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nama"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/det_atasnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/l_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="No. Telp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/det_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/l_tmpatHilang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Status"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/det_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/l_tgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Tanggal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/det_tgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/openmap"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/toolbar_blue"
+                android:text="Buka peta lokasi"
+                android:textColor="@color/whitetext" />
+
+            <Button
+                android:id="@+id/changestatus"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/toolbar_blue"
+                android:text="-"
+                android:textColor="@color/whitetext" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

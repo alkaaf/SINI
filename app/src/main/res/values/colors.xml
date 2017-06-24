@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="found">#81CFE0</color>
+    <color name="lost">#F1A9A0</color>
+    <color name="clear">#C8F7C5</color>
+    <color name="bg">#009688</color>
+    <color name="toolbar_blue">#0288D1</color>
+    <color name="navcolor">#0277BD</color>
+    <color name="whitetext">#ffffff</color>
+</resources>

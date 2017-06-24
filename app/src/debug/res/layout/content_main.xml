@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dalbo.sini.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"></FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
